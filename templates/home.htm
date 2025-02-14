@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>e-Governance Web App - Nepal</title>
+    <link rel="stylesheet" href="/css/home.css">
+</head>
+<body>
+    <div class="total">
+    <!-- Horizontal Navigation Bar -->
+    <nav class="navbar">
+        <div class="navbar">
+            <div class="logo">
+                <a href="javascript:void(0)" onclick="showContent('home-c')">
+                    <img src="/templates/image/quiz.png" alt="e-Governance Logo" />
+                </a>
+            </div>
+            <div class="button">
+                <ul class="nav-links">
+                    <li><a href="javascript:void(0)" onclick="showContent('home-c')">Home</a></li>
+                    <li><a href="javascript:void(0)" onclick="showContent('complaints-c')">Complaints</a></li>
+                    <li><a href="javascript:void(0)" onclick="showContent('voting-c')">Voting</a></li>
+                    <li><a href="javascript:void(0)" onclick="showContent('settings-c')">Settings</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    
+    <div id="content">
+        <div id="home-c" class="content-section">
+            <div class="ad-container">
+                <h1>Welcome to <span class="highlight">Vote A</span> The Future of Voting in Nepal! 🇳🇵</h1>
+                <p class="tagline">REVOLUTIONIZE YOUR VOICE IN DEMOCRACY</p>
+                <p>Introducing Vote A, an innovative e-Governance web app designed to empower every citizen of Nepal.</p>
+              
+                <div class="features">
+                  <div class="feature-box"><h3>✅ Secure Voting</h3><p><p>🌐 </p>100% secure with encryption.<p>🔑</p></div>
+                  <div class="feature-box"><h3>✅ Instant Results</h3><p><p>⚡</p> Real-Time Voting Feedback <p>🗳️📊</p></p></div>
+                  <div class="feature-box"><h3>✅ Accessible Anywhere</h3><p><p>🗳️</p>Vote from anywhere!. <p>🌍</p></p></div>
+                </div>
+              
+                <p class="final-text">🔥 Join the movement. 🗳️ Your vote matters! ✅</p>
+                <button class="cta-btn" onclick="alert('On progress');">Download Now!</button>
+
+            </div>           
+              
+            
+            <section class="section-box" id="voting-box">
+                <h2>Participate in Voting</h2>
+                <p>🗳️ Vote on key issues affecting your community in Nepal! 🇳🇵 Select your choice below and make your voice heard! 🔥 Make your choice below!</p>
+                <div class="secnn"><img class="small" src="image/votei.png">
+                <button onclick="showContent('voting-c')">Go to Voting</button></div>
+            </section>
+            
+            <section class="section-box" id="complaints-box">
+                <h2>Submit a Complaint</h2>
+                <p>If you have any complaints or suggestions, please share them with us. Your feedback is important to improve the system.</p>
+                <div class="secnn">
+                    <img src="image/complain.png" class="smallo">
+                <button onclick="showContent('complaints-c')">Go to Complaints</button></div>
+            </section>
+            
+            <section class="section-box">
+                <h2>Vote Count Status</h2>
+                <div class="vote-count">
+                    <h3>Wanted Development Votes</h3>
+                    <p>Improve Public Infrastructure: 320</p>
+                    <p>Improve Healthcare Services: 245</p>
+                    <p>Support Education Initiatives: 180</p>
+                </div>
+                <div class="vote-count">
+                    <h3>Party Support Votes</h3>
+                    <p>Democratic Party: 500</p>
+                    <p>Republican Party: 200</p>
+                    <p>Independent Party: 150</p>
+                </div>
+            </section>
+        </div>
+
+        <div id="complaints-c" class="content-section">
+            <h2>Submit Your Complaint</h2>
+            <form>
+                <label for="complaint">Your Complaint:</label><br>
+                <textarea id="complaint" name="complaint" rows="4" cols="50"></textarea><br>
+                <button type="submit">Submit Complaint</button>
+            </form>
+            <h3>Previous Complaints</h3>
+            <ul>
+                <li>Complaint 1: System error in the voting process.</li>
+                <li>Complaint 2: Issues with the complaint submission form.</li>
+            </ul>
+        </div>
+
+        <div id="voting-c" class="content-section">
+            <h2>Vote on the Current Issues</h2>
+        
+            <button class="collapsible">Wanted Development</button>
+            <div class="content" id="wanted-development-content">
+                <div class="development-container">
+                    <!-- Existing development options -->
+                    <div class="development-box">
+                        <input type="radio" id="development-1" name="development" value="Option 1">
+                        <p>Improve public infrastructure</p>
+                        <p class="development-description">Description about improving public infrastructure.</p>
+                    </div>
+                    <div class="development-box">
+                        <input type="radio" id="development-2" name="development" value="Option 2">
+                        <p>Improve healthcare services</p>
+                        <p class="development-description">Description about improving healthcare services.</p>
+                    </div>
+                    <!-- Additional development options -->
+                    <div class="development-box">
+                        <input type="radio" id="development-3" name="development" value="Option 3">
+                        <p>Support Education Initiatives</p>
+                        <p class="development-description">Description about supporting education initiatives.</p>
+                    </div>
+                    <div class="development-box">
+                        <input type="radio" id="development-4" name="development" value="Option 4">
+                        <p>Improve transportation infrastructure</p>
+                        <p class="development-description">Description about improving transportation infrastructure.</p>
+                    </div>
+                    <div class="development-box">
+                        <input type="radio" id="development-5" name="development" value="Option 5">
+                        <p>Support agriculture and farming</p>
+                        <p class="development-description">Description about supporting agriculture and farming.</p>
+                    </div>
+                    <div class="development-box">
+                        <input type="radio" id="development-6" name="development" value="Option 6">
+                        <p>Increase renewable energy projects</p>
+                        <p class="development-description">Description about increasing renewable energy projects.</p>
+                    </div>
+                    <div class="development-box">
+                        <input type="radio" id="development-7" name="development" value="Option 7">
+                        <p>Support waste management and recycling</p>
+                        <p class="development-description">Description about supporting waste management and recycling.</p>
+                    </div>
+                    <div class="development-box">
+                        <input type="radio" id="development-8" name="development" value="Option 8">
+                        <p>Enhance public safety and emergency services</p>
+                        <p class="development-description">Description about enhancing public safety and emergency services.</p>
+                    </div>
+                    <div class="development-box">
+                        <input type="radio" id="development-9" name="development" value="Option 9">
+                        <p>Promote tourism and cultural heritage</p>
+                        <p class="development-description">Description about promoting tourism and cultural heritage.</p>
+                    </div>
+                    <div class="development-box">
+                        <input type="radio" id="development-10" name="development" value="Option 10">
+                        <p>Develop IT and technology infrastructure</p>
+                        <p class="development-description">Description about developing IT and technology infrastructure.</p>
+                    </div>
+                </div>
+            </div>
+        
+            <button class="collapsible">Party Support</button>
+            <div class="content" id="party-support-content">
+                <div class="party-container">
+                    <!-- Existing party options -->
+                    <div class="party-box">
+                        <input type="radio" id="party-1" name="party" value="Nepali Congress">
+                        <p>Nepali Congress</p>
+                        <p class="party-description">Description about Nepali Congress</p>
+                    </div>
+                    <div class="party-box">
+                        <input type="radio" id="party-2" name="party" value="CPN-UML">
+                        <p>CPN-UML</p>
+                        <p class="party-description">Description about CPN-UML</p>
+                    </div>
+                    <!-- Additional party options -->
+                    <div class="party-box">
+                        <input type="radio" id="party-3" name="party" value="Maoist Party">
+                        <p>Maoist Party</p>
+                        <p class="party-description">Description about Maoist Party</p>
+                    </div>
+                    <div class="party-box">
+                        <input type="radio" id="party-4" name="party" value="Rastriya Prajatantra Party">
+                        <p>Rastriya Prajatantra Party</p>
+                        <p class="party-description">Description about Rastriya Prajatantra Party</p>
+                    </div>
+                    <div class="party-box">
+                        <input type="radio" id="party-5" name="party" value="Janata Samajwadi Party">
+                        <p>Janata Samajwadi Party</p>
+                        <p class="party-description">Description about Janata Samajwadi Party</p>
+                    </div>
+                    <div class="party-box">
+                        <input type="radio" id="party-6" name="party" value="Rastriya Janata Party">
+                        <p>Rastriya Janata Party</p>
+                        <p class="party-description">Description about Rastriya Janata Party</p>
+                    </div>
+                    <div class="party-box">
+                        <input type="radio" id="party-7" name="party" value="Loktantrik Samajwadi Party">
+                        <p>Loktantrik Samajwadi Party</p>
+                        <p class="party-description">Description about Loktantrik Samajwadi Party</p>
+                    </div>
+                    <div class="party-box">
+                        <input type="radio" id="party-8" name="party" value="Federal Socialist Forum Nepal">
+                        <p>Federal Socialist Forum Nepal</p>
+                        <p class="party-description">Description about Federal Socialist Forum Nepal</p>
+                    </div>
+                    <div class="party-box">
+                        <input type="radio" id="party-9" name="party" value="Democratic Socialist Party">
+                        <p>Democratic Socialist Party</p>
+                        <p class="party-description">Description about Democratic Socialist Party</p>
+                    </div>
+                    <div class="party-box">
+                        <input type="radio" id="party-10" name="party" value="National Democratic Party">
+                        <p>National Democratic Party</p>
+                        <p class="party-description">Description about National Democratic Party</p>
+                    </div>
+                </div>
+            </div>
+        
+            <button type="button" onclick="submitVote()">Submit Vote</button>
+        </div>
+        
+        <div id="settings-c" class="content-section">
+            <h2>Settings</h2>
+            <p>We are currently working on this section. Stay tuned for future updates!</p>
+            
+            <div class="under-construction">
+                <h3>Under Construction</h3>
+                <p>This section is still being developed. We're working hard to bring you more features soon. Thank you for your patience!</p>
+                <img src="https://via.placeholder.com/400x200?text=Under+Construction" alt="Under Construction">
+            </div>
+        </div>
+    </div>   
+    <script>
+        // Function to hide all content sections
+        function hideAllContent() {
+            const sections = document.querySelectorAll('.content-section');
+            sections.forEach(section => {
+                section.style.display = 'none';
+            });
+        }
+
+        // Function to show the content section
+        function showContent(contentId) {
+            hideAllContent();
+            document.getElementById(contentId).style.display = 'block';
+        }
+
+        // Collapsible content toggle function
+        const collapsibles = document.querySelectorAll('.collapsible');
+        collapsibles.forEach(collapsible => {
+            collapsible.addEventListener('click', function() {
+                this.classList.toggle('active');
+                const content = this.nextElementSibling;
+                if (content.style.display === 'block') {
+                    content.style.display = 'none';
+                } else {
+                    content.style.display = 'block';
+                }
+            });
+        });
+
+        // Function to submit the vote
+        function submitVote() {
+            const selectedDevelopment = document.querySelector('input[name="development"]:checked');
+            const selectedParty = document.querySelector('input[name="party"]:checked');
+            
+            if (selectedDevelopment) {
+                alert("You voted for: " + selectedDevelopment.value);
+            } else {
+                alert("Please select a development option.");
+            }
+
+            if (selectedParty) {
+                alert("You support: " + selectedParty.value);
+            } else {
+                alert("Please select a party.");
+            }
+        }
+
+        // Show home content by default
+        showContent('home-c');
+    </script>
+</body>
+</html>

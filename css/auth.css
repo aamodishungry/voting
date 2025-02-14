@@ -1,0 +1,168 @@
+
+*{
+    font-family: "Rubik", serif;
+}
+body{
+    overflow:hidden;
+}
+.total {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    padding: 20px;
+    box-sizing: border-box;
+}
+.sep{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: -30px;
+}
+.left, .right {
+    width: 50%;
+}
+
+.left {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 15.57rem;
+    height: 100vh;
+    margin-top: -100px;
+}
+.right{
+    height: 100vh;
+    
+    margin-right: -30px;
+    padding-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: radial-gradient(72.53% 75.59% at 50% 50%, rgba(255, 255, 255, 0.41) 16.55%, rgba(243, 243, 243, 0.41) 32.78%);
+}
+.right img {
+    width: 35.88881rem;
+    height: 39.47794rem;
+    padding-left: 30px;
+}
+.imageo{
+    width: 14.3125rem;   
+    height: 5.625rem;
+    padding-left: 10px;
+}
+.headone{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+}
+h3{
+    width: 100%;
+    height: 2.10456rem;
+    flex-shrink: 0;
+    color: rgba(0, 0, 0, 0.60);
+    text-align: center;
+    font-family: Roboto;
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    padding-top: 15px;
+    padding-bottom: -30px;
+}
+h4.title{
+    width: 100%;
+    color: rgba(0, 0, 0, 0.60);
+    text-align: center;
+    font-family: Roboto;
+    font-size: 1.3rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-top: -29px;
+
+}
+h3,p,h4{
+    text-align: center;
+}
+
+input[type="text"], input[type="password"], input[type="email"] {
+    width: 450px;
+    max-width: 900px;
+    padding: 12px;
+    margin: 8px 0;
+    border: 1px solid #FCC822;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 14px;
+    outline: none;
+    font-family: 'Roboto', sans-serif;
+}
+input[type="text"]:hover, input[type="password"]:hover, input[type="email"]:hover {
+    border-left: 3px solid #FCC822;
+}
+input[type="text"]:focus, input[type="password"]:focus, input[type="email"]:focus {
+    border-left: 5px solid #FCC822; /* Border applied when the input is selected */
+    outline: none; /* Removes default focus outline */
+}
+
+
+#password {
+    font-family: 'Roboto', sans-serif;
+}
+
+input[type="checkbox"] {
+    margin-right: 8px;
+}
+
+label {
+    font-size: 14px;
+    color: #555;
+    display: flex;
+    align-items: center;
+}
+
+.titlechange {
+    background-color: #FCC822;
+    color: white;
+    padding: 12px;
+    width: 100%;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.titlechange:hover {
+    background-color: #e6a900;
+}
+.inner{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+#changebutton{
+    background-color: #FCC822;
+    color: white;
+    padding: 12px;
+    width: 100%;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+
+}
+#changebutton:hover {
+    background-color: #e6a900;
+}
+.hedthree{
+    margin-top: 20px;
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+}

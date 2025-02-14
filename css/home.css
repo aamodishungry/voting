@@ -1,0 +1,339 @@
+/* General reset and styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    overflow-y: scroll;
+}
+
+/* Navigation Bar Styling */
+.navbar {
+    margin-top: -9px;
+    display: flex;
+    justify-content: space-between;  /* Space between logo and nav buttons */
+    align-items: center;
+    background-color: white;  /* Background color */
+    gap: 700px;
+    padding: 20px 30px;  /* Increased padding for bigger height */
+}
+
+/* Logo Styling - Left side */
+.navbar .logo img {
+    width: 200px;
+    height: auto;
+}
+
+/* Navigation links container - Right side */
+.navbar .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 0;  /* No gap between the buttons */
+    padding: 0;  /* Remove any default padding from the list */
+    margin-left: auto;  /* Push the navigation buttons to the right corner */
+}
+
+/* Link Styling */
+.navbar .nav-links li {
+    display: inline-block;
+    height: 100%;  /* Make each button fill the navbar height */
+}
+
+.navbar .nav-links li a {
+    text-decoration: none;
+    color: white;  /* Set default text color to white */
+    font-size: 18px;
+    font-weight: bold;
+    padding: 20px 30px;  /* Make the height of the buttons equal to navbar height */
+    border-radius: 0;  /* Remove rounded corners to make them appear connected */
+    background-color: #FCC822;  /* Default background color */
+    transition: all 0.3s ease;  /* Smooth transition for hover and active states */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;  /* Make the button take up the entire width of its container */
+    outline: none;  /* Remove default outline on focus */
+}
+
+/* Hover effect */
+.navbar .nav-links li a:hover {
+    background-color: #FF9800;  /* Slightly darker shade for hover effect */
+    color: white;  /* Keep text color white on hover */
+    transform: scale(1.05);  /* Slight zoom effect on hover */
+}
+
+/* Active link styling - Black bottom border for selected button */
+.navbar .nav-links li a.active {
+    border-bottom: 2px solid black;  /* Add black bottom border when selected */
+    background-color: #FF9800;  /* Change background color to indicate selection */
+    color: black;  /* Change text color to black for selected button */
+}
+
+/* Navbar with logo on the left, buttons on the right */
+.navbar .nav-links {
+    margin-left: auto;  /* Push the navigation buttons to the right */
+}
+
+/* Mobile responsiveness */
+@media screen and (max-width: 768px) {
+    .navbar .nav-links {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .navbar .nav-links li a {
+        font-size: 16px;
+    }
+}
+
+#home-c{
+    display: block;
+
+}
+#complaints-c,#voting-c,#settings-c{
+    display: none;
+}
+
+.section-box {
+    background-color: #fff;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px #fcc92261;
+    display: inline-block;
+    width: 45%;
+    vertical-align: top;
+    height: 400px;
+    text-align: center;
+}
+    
+.section-box h2{
+    font-size: 25px;
+    font-family: Poppins;
+    padding-bottom: 30px;
+}
+.section-box h2 {
+    color: #333;
+}
+
+.section-box p {
+    font-size: 1.1em;
+    color: #555;
+}
+.secnn{
+    display: flex;
+    flex-direction: column;
+}
+.small{
+    width: 200px;
+    margin: 10px auto 10px;
+}
+.smallo{
+    width: 400px;
+    height: 200px;
+    margin: 10px auto 10px;
+    margin-left: 16     0px;
+}
+
+.section-box button {
+    padding: 10px 20px;
+    background-color: #FCC822;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1.1em;
+    padding: 20px auto 20px;   
+    width: 30%;
+    margin: 15px auto 0; 
+}
+
+.section-box button:hover {
+    background-color: #45a049;
+}
+
+/* Flexbox container for alignment */
+#home-c, #complaints-c, #voting-c, #settings-c {
+    display: none;
+}
+
+.vote-options {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 20px 0;
+}
+
+.vote-option {
+    background-color: #e7f7e7;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 8px;
+    text-align: center;
+    width: 45%;  /* Making it two elements in a row */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+}
+
+.vote-option:hover {
+    background-color: #c1e0c6;
+}
+
+.vote-option input {
+    margin-right: 10px;
+}
+
+.vote-count {
+    background-color: #f0f0f0;
+    padding: 15px;
+    margin: 10px;
+    border-radius: 8px;
+    text-align: center;
+    width: 45%;
+    display: inline-block;
+}
+
+.collapsible {
+    background-color: #f1f1f1;
+    color: #333;
+    cursor: pointer;
+    padding: 15px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    font-size: 1.2em;
+    border-radius: 4px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.active, .collapsible:hover {
+    background-color: #ddd;
+}
+.total{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+.content {
+    padding: 0 18px;
+    display: none;
+    overflow: hidden;
+    background-color: #f9f9f9;
+    border-radius: 4px;
+    margin-top: 20px;
+}
+
+.party-container, .development-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
+}
+
+.party-box, .development-box {
+    width: 45%;  /* Making it two elements in a row */
+    padding: 20px;
+    background-color: #337ab7;
+    color: white;
+    border-radius: 8px;
+    text-align: center;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease;
+}
+
+.party-box:hover, .development-box:hover {
+    background-color: #286090;
+}
+
+.party-box p, .development-box p {
+    font-size: 1.1em;
+    font-weight: bold;
+}
+
+.party-box input, .development-box input {
+    margin-right: 10px;
+}
+* { margin: 0; padding: 0; box-sizing: border-box; font-family: Arial, sans-serif; }
+              
+              
+.ad-container { 
+  background: #ffffff;  /* Light Green */
+  color: #333;
+  text-align: center;
+  padding: 40px;
+  width:100%;
+  display: flex;
+  flex-direction: column;
+  animation: fadeIn 1s ease-in-out;
+  gap: 20px;
+  justify-content: center;
+}
+
+.ad-container h1 { 
+  width: 70%;
+  font-size: 4.5em; 
+  
+  margin: 0 auto 15px;
+}
+
+.tagline {
+  font-size: 1.5em;
+  font-weight: bold;
+  color: #FCC822;
+  margin-bottom: 15px;
+  font-family: Poppins;
+}
+.features {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin: 20px 0;
+}
+.features .feature-box h3{
+    font-size: 30px;
+    padding-bottom: 20px;
+    margin-bottom: 10px;
+}
+.features .feature-box p{
+    font-size: 23px;
+    width: 120px;
+    margin: 4px auto 4px;
+}
+.feature-box {
+  background: white;
+  padding: 20px;
+  margin: 10px;
+  border-radius: 10px;
+  width: 30%;
+  height: 210px;
+  min-width: 180px;
+  box-shadow: 0 4px 8px rgb(177, 208, 219);
+  transition: transform 0.3s ease-in-out;
+}
+.feature-box:hover {
+  transform: scale(1.05);
+}
+.cta-btn { 
+  background: #FCC822; 
+  color: white; 
+  font-size: 1.5em; 
+  padding: 15px 30px; 
+  border: none; 
+  border-radius: 10px; 
+  cursor: pointer; 
+  font-weight: bold;
+  transition: background 0.3s ease-in-out;
+  width: 19%;
+  margin: 0 auto 0;
+}
+.cta-btn:hover { 
+  background: #9bf221; 
+}
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
